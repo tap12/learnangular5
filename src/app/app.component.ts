@@ -17,6 +17,11 @@ export class AppComponent {
   query: string;
   artists: object;
 
+  showArtist(e, item) {
+    console.log(e);
+    this.query = item.name;
+  }
+
   constructor() {
     this.query = 'Barot';
     this.artists = [
